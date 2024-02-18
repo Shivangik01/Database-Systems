@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+
+</Style>
+
+<Placemark><name>ANN COMM</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28532222295337,34.02150961046098</coordinates></Point>
+</Placemark>
+
+<Placemark><name>ANN Wallis</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28729001916392,34.021072322722624</coordinates></Point>
+</Placemark>
+
+<Placemark><name>CINE GeorgeLucas</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28645264790256,34.023541192139454</coordinates></Point>
+</Placemark>
+
+<Placemark><name>CINE UrbanDesign</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28797880430984,34.024067008720024</coordinates></Point>
+</Placemark>
+
+<Placemark><name>DORNSIFE Recital</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28449393314318,34.02006975709813</coordinates></Point>
+</Placemark>
+
+<Placemark><name>DORNSIFE SGM</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28910207837514,34.0219231268512</coordinates></Point>
+</Placemark>
+
+<Placemark><name>MARSHAL Hoffman</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2853829859345,34.01880322313149</coordinates></Point>
+</Placemark>
+
+<Placemark><name>MARSHAL Popvich</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28266898850322,34.019072035267364</coordinates></Point>
+</Placemark>
+
+<Placemark><name>MUSIC BingHall</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28566606080976,34.02239019422073</coordinates></Point>
+</Placemark>
+
+<Placemark><name>MUSIC RamoHall</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28537753117745,34.02285104060733</coordinates></Point>
+</Placemark>
+
+<Placemark><name>VITERBI Chemical</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28914064490952,34.02006490467983</coordinates></Point>
+</Placemark>
+
+<Placemark><name>VITERBI CS DEPT</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28885155835569,34.020687268398426</coordinates></Point>
+</Placemark>
+
+<Placemark><name>HOME MardiGras</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.27950033405116,34.02808024651537</coordinates></Point>
+</Placemark>
+
+
+ <Placemark>
+
+        <name>Convex Hull</name>
+
+        <Style>
+            <PolyStyle>
+              <color>7f00ffff</color>
+              <fill>1</fill>
+              <outline>1</outline>
+            </PolyStyle>
+            <LineStyle>
+              <color>ff0000ff</color>
+              <width>2</width>
+            </LineStyle>
+         </Style>
+
+		<Polygon>
+		<altitudeMode>clampToGround</altitudeMode>
+		  <outerBoundaryIs>
+		    <LinearRing>
+		      <coordinates>
+		        -118.2853829859345,34.01880322313149 
+		        -118.28914064490952,34.02006490467983 
+		        -118.28910207837514,34.0219231268512 
+		        -118.28797880430984,34.024067008720024 
+		        -118.27950033405116,34.02808024651537 
+		        -118.28266898850322,34.019072035267364 
+		        -118.2853829859345,34.01880322313149
+		      </coordinates>
+		    </LinearRing>
+		  </outerBoundaryIs>
+		</Polygon>
+
+</Placemark>
+
+<Placemark>
+  <name>Neighbor 1</name>
+
+  <Style>
+    <LineStyle>
+      <color>ff800080</color>
+      <width>2</width>
+    </LineStyle>
+ </Style>
+
+  <LineString>
+    <coordinates>
+      -118.27950033405116,34.02808024651537
+      -118.28537753117745,34.02285104060733
+    </coordinates>
+  </LineString>
+</Placemark>
+
+<Placemark>
+  <name>Neighbor 2</name>
+
+  <Style>
+    <LineStyle>
+      <color>ff800080</color>
+      <width>2</width>
+    </LineStyle>
+ </Style>
+
+  <LineString>
+    <coordinates>
+      -118.27950033405116,34.02808024651537
+      -118.28645264790256,34.023541192139454
+    </coordinates>
+  </LineString>
+</Placemark>
+
+<Placemark>
+  <name>Neighbor 3</name>
+
+  <Style>
+    <LineStyle>
+      <color>ff800080</color>
+      <width>2</width>
+    </LineStyle>
+ </Style>
+
+  <LineString>
+    <coordinates>
+      -118.27950033405116,34.02808024651537
+      -118.28566606080976,34.02239019422073
+    </coordinates>
+  </LineString>
+</Placemark>
+
+<Placemark>
+  <name>Neighbor 4</name>
+
+  <Style>
+    <LineStyle>
+      <color>ff800080</color>
+      <width>2</width>
+    </LineStyle>
+ </Style>
+ 
+  <LineString>
+    <coordinates>
+      -118.27950033405116,34.02808024651537
+      -118.28532222295337,34.02150961046098
+    </coordinates>
+  </LineString>
+</Placemark>
+
+</Document></kml>

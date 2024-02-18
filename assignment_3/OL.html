@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>OL</title>
+  	
+  	<link rel="stylesheet" href="https://openlayers.org/en/v6.5.0/css/ol.css" type="text/css">
+  	
+  	<script src="https://openlayers.org/api/OpenLayers.js"></script>
+  	
+  	<style>
+		#map {
+		    width:800px;
+		    height:800px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="map"></div>
+
+<script>
+
+	// alert("Hello JS World!");
+
+
+	var d = {"k1":[{lng:-118.28532222295337,lat:34.02150961046098},{lng:-118.28729001916392,lat:34.021072322722624},{lng:-118.28645264790256,lat:34.023541192139454},{lng:-118.28797880430984,lat:34.024067008720024},{lng:-118.28449393314318,lat:34.02006975709813},{lng:-118.28910207837514,lat:34.0219231268512},{lng:-118.2853829859345,lat:34.01880322313149},{lng:-118.28266898850322,lat:34.019072035267364},{lng:-118.28566606080976,lat:34.02239019422073},{lng:-118.28537753117745,lat:34.02285104060733},{lng:-118.28914064490952,lat:34.02006490467983},{lng:-118.28885155835569,lat:34.020687268398426},{lng:-118.27950033405116,lat:34.02808024651537}]};
+
+	localStorage.setItem("myData",JSON.stringify(d));
+
+
+	var dataStored = JSON.parse(localStorage.getItem("myData"));
+
+	console.log(dataStored); 
+
+	var points = dataStored.k1; 
+
+	function initMap() {
+	        map = new OpenLayers.Map('map');
+	        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+	        map.addLayer(basemap);
+	        markers = new OpenLayers.Layer.Markers("Markers");
+	        map.addLayer(markers);
+	}
+
+	function addMarker(latitude, longitude) {
+	        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+	            .transform(
+	                new OpenLayers.Projection("EPSG:4326"), 
+	                map.getProjectionObject()
+	        );
+	        var point = new OpenLayers.Marker(lonLat);
+	        markers.addMarker(point);
+	        map.setCenter(lonLat,15); 
+	       
+	}
+
+	initMap();
+
+	console.log(points); 
+
+	for (var i = 0; i < 13; i++)
+	{
+		addMarker(points[i].lat,points[i].lng); 
+
+		// console.log(points[i].lat); 
+		// console.log(points[i].lng); 
+	}
+
+	// addMarker(34.0205,-118.28538); 
+
+
+</script>
+
+</body>
+
+</html>
